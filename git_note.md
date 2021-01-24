@@ -56,6 +56,7 @@ git log
 
 三、
 git remote add origin git@github.com:Wong-code/Mr_Wong.git  //连接远程仓库，origin是远程仓库的小名，Wong-code是username，Mr_Wong是仓库名
+git pull --rebase origin master //防止被仓库reject
 git push -u origin master //将文件传到远程仓库
 
 
