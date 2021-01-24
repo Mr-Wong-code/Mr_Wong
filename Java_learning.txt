@@ -86,7 +86,28 @@ java整型相除，结果向下取整，依然为整型。
 数组是一个固定长度，包含相同类型数据的容器。
 访问数组长度：int[] a = new int[5]; System.out.print(a.length);
 在数组初始化时赋值：int[] a = new int[]{22, 36, 56};
+数组复制：System.arraycopy(src, srcPos, dest, destPos，length);
+例子 System.arraycopy(a, 0, b, 3, 5); //数组a从下标0开始，将五个元素复制到数组b，数组b的下标从3开始
 
+Arrays工具类，可以进行 排序，查找，复制填充等功能，大大提高了开发人员的工作效率。
+复制。int[] b =Arrays.copyOfRange(int[] a, int from, int to)
+// 第一个参数表示源数组
+// 第二个参数表示开始位置(取得到)
+// 第三个参数表示结束位置(取不到)
+
+转换为字符串。Arrays.toString(int[] array)方法，直接把一个数组，转换为字符串，方便打印。
+System.out.println(Arrays.toString(a));
+
+排序,将结果保存在原数组。Arrays.sort(int[] array); 
+
+搜索。使用binarySearch之前，必须先使用sort进行排序。
+Arrays.sort(a); int index = Arrays.binarySearch(a, 62); //找出62这个数的索引
+
+判断数组是否相同，返回true或false。boolean flag = Arrays.equals(a, b);
+
+用同一个数填充数组。Arrays.fill(a, 5);
+
+只有Arrays.sort()和Arrays.fill()不需要重新赋值。
 
 17.forEach循环，例子
 String[] sentences = {"hello","how are you","I am fine"};
