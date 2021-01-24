@@ -1,5 +1,4 @@
 Java学习笔记
-学习计划：本周内学完java基础
 1.java执行过程：Hello.java -> Hello.class -> 机器码
 		  编译器JDK(包含JVM)	虚拟机JVM
 
