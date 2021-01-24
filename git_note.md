@@ -23,8 +23,7 @@ git remote add 远程仓库名 远程仓库地址
 15.git push -u origin master							//推送到远程仓库  
 git push 远程主机名	本地分支名：远程分支名				//使用-u默认后面的参数，  
 			//之后本地相同的仓库传到相同的远程主机可直接用git push  
-			//-f强制推送，不建议使用，应先用git pull
-
+			//-f强制推送，不建议使用，应先用git pull  --rebase origin master  
 16.git clone https://github.com/Mr-Wong-code/Mr-Wong-code.github.io.git		//克隆项目
 
 
